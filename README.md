@@ -23,9 +23,13 @@ Select + A for 3 s: forget all pairings. Xbox and Switch 2: Start = +, Select = 
 
 ![Wiring](docs/wiring.svg)
 
-Wire colours of the original controller cable; the controller runs fine on the Feather's 3 V. The red wire, once the
-battery line, only reports the power switch now: off connects it to GND and the Feather, still on its own LiPo, goes
-into deep sleep. It has to be IO7: only IO0–IO7 can wake the C6. Drawn by `docs/wiring.py`.
+Wire colours of the original controller cable; the controller runs fine on the Feather's 3 V.
+
+The red wire originally carried the battery pack's power through the power switch to the console. Cut it inside the
+controller and wire the end that comes from the switch to IO7. Switching off then connects IO7 to GND and the Feather,
+which keeps running on its own LiPo, goes into deep sleep. It has to be IO7: only IO0–IO7 can wake the C6.
+
+Drawn by `docs/wiring.py`.
 
 ## Build
 
