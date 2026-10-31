@@ -18,8 +18,22 @@ Xbox mode also works through an 8BitDo Wireless USB Adapter 2.
 
 ## Controls
 
-Right D-pad = right stick. Select + L: left D-pad as D-pad or left stick. Select + B: swap A and B.
-Select + A for 3 s: forget all pairings. Xbox / Switch 2: Start = Menu / +, Select = View / −, Select + Start = Xbox / HOME, Select + R = Share / Capture.
+The right D-pad is the right stick. The left D-pad is the D-pad, or the left stick after <kbd>Select</kbd> + <kbd>L</kbd>.
+
+| Shortcut                                | Does                             |
+|-----------------------------------------|----------------------------------|
+| <kbd>Select</kbd> + <kbd>L</kbd>        | left D-pad: D-pad ↔ left stick   |
+| <kbd>Select</kbd> + <kbd>B</kbd>        | swap A and B                     |
+| <kbd>Select</kbd> + <kbd>A</kbd> for 3 s | forget all pairings             |
+
+Extra buttons in Xbox and Switch 2 mode:
+
+| Virtual Boy                          | Xbox  | Switch 2 |
+|--------------------------------------|-------|----------|
+| <kbd>Start</kbd>                     | Menu  | +        |
+| <kbd>Select</kbd>                    | View  | −        |
+| <kbd>Select</kbd> + <kbd>Start</kbd> | Xbox  | HOME     |
+| <kbd>Select</kbd> + <kbd>R</kbd>     | Share | Capture  |
 
 ## Wiring
 
