@@ -8,16 +8,18 @@ Open-source Bluetooth mod for the original Virtual Boy controller, using an Adaf
 
 Hold a button while switching on; holding none keeps the last mode. The LED blinks while waiting for a connection.
 
-| Hold | LED   | Acts as                                              | Pairing                                         |
-|------|-------|------------------------------------------------------|-------------------------------------------------|
-| L    | blue  | generic BLE gamepad (Android)                        | "Virtual Boy Controller" in Bluetooth settings  |
-| R    | green | Xbox controller, for an 8BitDo Wireless USB Adapter 2 | hold the adapter's button until it blinks fast |
-| A    | red   | Switch 2 Pro Controller                              | Change Grip/Order, once; it reconnects by itself after that |
+| Hold | LED   | Acts as                                         | Pairing                                          |
+|------|-------|-------------------------------------------------|--------------------------------------------------|
+| L    | blue  | generic BLE gamepad (Android)                   | "Virtual Boy Controller" in Bluetooth settings   |
+| R    | green | Xbox Wireless Controller, e.g. for a Windows PC | "Xbox Wireless Controller" in Bluetooth settings |
+| A    | red   | Switch 2 Pro Controller                         | Change Grip/Order, once; it reconnects by itself after that |
+
+Xbox mode also works through an 8BitDo Wireless USB Adapter 2: hold the adapter's button until it blinks fast.
 
 ## Controls
 
 Right D-pad = right stick. Select + L: left D-pad as D-pad or left stick. Select + B: swap A and B.
-Select + A for 3 s: forget all pairings. Xbox and Switch 2: Start = +, Select = −, Select + Start = HOME, Select + R = Capture.
+Select + A for 3 s: forget all pairings. Xbox / Switch 2: Start = Menu / +, Select = View / −, Select + Start = Xbox / HOME, Select + R = Share / Capture.
 
 ## Wiring
 
