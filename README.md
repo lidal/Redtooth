@@ -23,8 +23,9 @@ Select + A for 3 s: forget all pairings. Xbox and Switch 2: Start = +, Select = 
 
 ![Wiring](docs/wiring.svg)
 
-Wire colours of the original controller cable. The controller runs fine on the Feather's 3 V. The red battery line
-goes through the controller's power switch; when it reads LOW the Feather goes into deep sleep. Drawn by `docs/wiring.py` (schemdraw).
+Wire colours of the original controller cable; the controller runs fine on the Feather's 3 V. The red wire, once the
+battery line, only reports the power switch now: off connects it to GND and the Feather, still on its own LiPo, goes
+into deep sleep. It has to be IO7: only IO0–IO7 can wake the C6. Drawn by `docs/wiring.py`.
 
 ## Build
 
@@ -39,3 +40,4 @@ allows it by patching one instruction in a build-local copy of `libble_app.a`; E
 
 Switch 2 protocol ported from [ESP32-BLE5-NSController-Emulator](https://github.com/2017fighting/ESP32-BLE5-NSController-Emulator)
 (MIT, `idf/main/switch2/LICENSE`), based on [switch2_controller_research](https://github.com/ndeadly/switch2_controller_research).
+Feather drawing in `docs/wiring.svg` from [Adafruit's Fritzing library](https://github.com/adafruit/Fritzing-Library) (CC BY-SA 3.0).
