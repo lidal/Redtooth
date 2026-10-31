@@ -31,14 +31,19 @@ which keeps running on its own LiPo, goes into deep sleep. It has to be IO7: onl
 
 Drawn by `docs/wiring.py`.
 
+## Battery pack cover
+
+`batteryPackCover/` holds a 3D-printable cover: the FreeCAD model (`MainBody.FCStd`) and a 3MF ready to print
+(`MainBody-Body.3mf`). It slides over the controller's battery pack compartment, in place of the original battery pack,
+and leaves an opening for the Feather's USB-C port. The Feather and the LiPo sit in that compartment; the wires reach
+the inside of the controller through its battery contact holes, so the controller's shell needs no cutting or drilling.
+
 ## Build
 
 Firmware in `idf/`, for ESP-IDF 6.1: `cd idf`, then `idf.py build flash`.
 
 The Switch 2 needs a 5 ms connection interval, below the Bluetooth LE minimum. `idf/cmake/ble_interval_patch.cmake`
 allows it by patching one instruction in a build-local copy of `libble_app.a`; ESP-IDF itself is not changed.
-
-`batteryPackCover/`: FreeCAD model and 3MF print file of the case that replaces the original battery pack and holds the Feather.
 
 ## Credits
 
