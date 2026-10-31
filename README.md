@@ -14,7 +14,7 @@ Hold a button while switching on; holding none keeps the last mode. The LED blin
 | R    | green | Xbox Wireless Controller, e.g. for a Windows PC | "Xbox Wireless Controller" in Bluetooth settings |
 | A    | red   | Switch 2 Pro Controller                         | Change Grip/Order, once; it reconnects by itself after that |
 
-Xbox mode also works through an 8BitDo Wireless USB Adapter 2: hold the adapter's button until it blinks fast.
+Xbox mode also works through an 8BitDo Wireless USB Adapter 2.
 
 ## Controls
 
