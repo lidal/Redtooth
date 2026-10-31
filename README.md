@@ -33,12 +33,14 @@ which keeps running on its own LiPo, goes into deep sleep. It has to be IO7: onl
 
 Drawn by `docs/wiring.py`.
 
-## Battery pack cover
+## Mounting and battery pack cover
 
-`batteryPackCover/` holds a 3D-printable cover: the FreeCAD model (`MainBody.FCStd`) and a 3MF ready to print
-(`MainBody-Body.3mf`). It slides over the controller's battery pack compartment, in place of the original battery pack,
-and leaves an opening for the Feather's USB-C port. The Feather and the LiPo sit in that compartment; the wires reach
-the inside of the controller through its battery contact holes, so the controller's shell needs no cutting or drilling.
+The Feather and the LiPo sit in the controller's battery pack compartment, held with double-sided tape, the Feather
+centred with its USB-C port at the top. The wires reach the inside of the controller through its battery contact holes,
+so the controller's shell needs no cutting or drilling.
+
+`batteryPackCover/` holds the 3D-printable cover that slides over the compartment in place of the original battery pack,
+with an opening for the USB-C port: the FreeCAD model (`MainBody.FCStd`) and a 3MF ready to print (`MainBody-Body.3mf`).
 
 ## Build
 
