@@ -1,0 +1,5 @@
+# Name,   Type, SubType, Offset,  Size
+# NVS at the same place and size as in the Arduino firmware, so the stored
+# mode and toggles survive switching between the two
+nvs,      data, nvs,     0x9000,  0x5000,
+factory,  app,  factory, 0x10000, 0x1F0000,

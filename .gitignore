@@ -1,0 +1,5 @@
+idf/build/
+idf/sdkconfig
+idf/sdkconfig.old
+Thumbs.db
+*.FCBak
