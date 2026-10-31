@@ -1,6 +1,6 @@
-# Virtual Boy Bluetooth controller
+# Redtooth
 
-An original Virtual Boy controller made wireless with an Adafruit ESP32-C6 Feather.
+Open-source Bluetooth mod for the original Virtual Boy controller, using an Adafruit ESP32-C6 Feather.
 
 <p><img src="IMG_0148.jpeg" width="32%"> <img src="IMG_0149.jpeg" width="32%"> <img src="IMG_0150.jpeg" width="32%"></p>
 
@@ -19,9 +19,15 @@ Hold a button while switching on; holding none keeps the last mode. The LED blin
 Right D-pad = right stick. Select + L: left D-pad as D-pad or left stick. Select + B: swap A and B.
 Select + A for 3 s: forget all pairings. Xbox and Switch 2: Start = +, Select = −, Select + Start = HOME, Select + R = Capture.
 
-## Hardware and build
+## Wiring
 
-Controller latch → GPIO 5, clock → 6, data → 8; power switch → 7 (low = off, deep sleep).
+![Wiring](docs/wiring.svg)
+
+Wire colours of the original controller cable. The controller runs fine on the Feather's 3 V. The red battery line
+goes through the controller's power switch; when it reads LOW the Feather goes into deep sleep. Drawn by `docs/wiring.py` (schemdraw).
+
+## Build
+
 Firmware in `idf/`, for ESP-IDF 6.1: `cd idf`, then `idf.py build flash`.
 
 The Switch 2 needs a 5 ms connection interval, below the Bluetooth LE minimum. `idf/cmake/ble_interval_patch.cmake`
