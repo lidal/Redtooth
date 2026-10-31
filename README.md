@@ -38,7 +38,7 @@ Firmware in `idf/`, for ESP-IDF 6.1: `cd idf`, then `idf.py build flash`.
 The Switch 2 needs a 5 ms connection interval, below the Bluetooth LE minimum. `idf/cmake/ble_interval_patch.cmake`
 allows it by patching one instruction in a build-local copy of `libble_app.a`; ESP-IDF itself is not changed.
 
-`batteryPack/`: FreeCAD model and 3MF print file of the case that replaces the original battery pack and holds the Feather.
+`batteryPackCover/`: FreeCAD model and 3MF print file of the case that replaces the original battery pack and holds the Feather.
 
 ## Credits
 
